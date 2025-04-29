@@ -1,0 +1,18 @@
+{
+  "name": "moment1",
+  "version": "1.0.0",
+  "description": "Automatisering &amp; publicering",
+  "author": "Samuel Petersson",
+  "license": "ISC",
+  "source": "src/index.html",
+  "scripts": {
+    "start": "parcel",
+    "build": "parcel build"
+  },
+  "devDependencies": {
+    "@parcel/transformer-sass": "^2.13.3",
+    "parcel": "^2.13.3",
+    "sass": "^1.85.0",
+    "sharp": "^0.33.5"
+  }
+}

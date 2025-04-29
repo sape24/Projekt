@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SASS</title>
+    <link rel="stylesheet" href="css/main.scss">
+    <script src="javascript/main.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <a href="index.html">
+            <picture>
+                <source srcset="bilder/css-preprocessorer-high-resolution-logo-transparent.png?as=avif" type="image/avif">
+                <source srcset="bilder/css-preprocessorer-high-resolution-logo-transparent.png?as=webp" type="image/webp">
+                <source srcset="bilder/css-preprocessorer-high-resolution-logo-transparent.png" type="image/png">
+                <img src="bilder/css-preprocessorer-high-resolution-logo-transparent.png" alt="Logotyp">
+           </picture>
+         </a>   
+        <nav class="desktopmenu"> <!--Desktopmenyn-->
+            <ul>
+                <li><a href="information.html">SASS</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">PARCEL</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">JS</a></li>
+            </ul>
+        </nav> 
+    
+            <button class="menu-btn open" id="open-menu"> <!--Knapp för att toggle fram hamburgermenyn-->
+                    <span class="menu-icon">
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                        <span class="bars"></span>
+                    </span>
+                    <span class="menu-text">Meny</span>
+            </button>
+
+        <nav class="mobilemenu" id="mobilemenu"> <!--Hamburgermeny för mobila enheter med en knapp för att stänga ner den-->
+            <button class="menu-btn close" id="close-menu">
+                <span class="menu-icon">
+                    <span class="bars cross1"></span>
+                    <span class="bars cross2"></span>
+                </span>
+                <span class="menu-text">Stäng meny</span>
+            </button>
+            <ul>
+                <li><a href="information.html">SASS</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">PARCEL</a></li>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">JS</a></li>
+            </ul>
+        </nav>
+    </header>
+    <div id="contentgrid">
+        <article id="indexarticle">
+            <h1>Utvärdering av SASS</h1>
+            <p> Det var extremt enkelt att komma igång med sass när grunden redan hade parcel det var bara att skapa en fil och påbörja designa i sin scss-fil däremot så blev det lite som att lära sig ett nytt språk med de nya funktionera som till exempel color functions, mixins eller selector inheritance<br><br><br> För och nackdelar med att använda sig av CSS-Processorer i detta fall scss, <br> Fördelar:<br> Oerhört enkelt med att skapa partials och länka in dom till main.scss filen vilket gör att css delen av projektet blir oerhört organiserat. <br>Jag älskade att man kunde nesta sin css-kod, sparar tid och undviker redundans samma sak gällde variablerna i detta fall blev det färgscheman och fonten som hamnade i en variabel till exempel behövde du inte kunna den exakta RGB eller hexkoden utan det var bara att skriva in sin skapade variabel. <br> <br> Några nackdelar med SASS var väl att det är lite svårt att veta vad som ska vara i vilken partial men det är väl något man lär sig samt att som jag nämnde tidigare man blir ganska förvirrad till en början hur allt fungerar men det hjälper att vanlig css fungerar också i scss så att pusselbitarna faller sakta men säkert på plats.</p>
+            <picture>
+                <source srcset="bilder/stromstad.jpg?as=avif" type="image/avif">
+                <source srcset="bilder/stromstad.jpg?as=webp" type="image/webp">
+                <source srcset="bilder/stromstad.jpg" type="image/jpg">
+                <img src="bilder/stromstad.jpg" alt="Bild på strömstad">
+            </picture>
+            <picture>
+                <source srcset="bilder/ursholmen.jpg?as=avif" type="image/avif">
+                <source srcset="bilder/ursholmen.jpg?as=webp" type="image/webp">
+                <source srcset="bilder/ursholmen.jpg" type="image/jpg">
+                <img src="bilder/ursholmen.jpg" alt="Bild på ursholmen">
+            </picture>
+        </article>
+    </div>
+</body>
+</html>
