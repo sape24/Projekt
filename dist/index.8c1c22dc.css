@@ -50,16 +50,16 @@
   }
 
   .mobilemenu a, .menu-text, .desktopmenu a, p, h1 {
-    color: #00df82;
+    color: #fff;
   }
 
   .bars {
-    background-color: #00df82;
+    background-color: #fff;
   }
 
   .menu-btn {
     background-color: #000;
-    border: 2px solid #00df82;
+    border: 2px solid #fff;
   }
 
   .mobilemenu {
@@ -72,6 +72,10 @@
 
   #indexarticle {
     background-color: #000;
+  }
+
+  #weatherTable {
+    color: #fff;
   }
 }
 

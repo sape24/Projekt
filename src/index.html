@@ -19,11 +19,7 @@
          </a>   
         <nav class="desktopmenu"> <!--Desktopmenyn-->
             <ul>
-                <li><a href="information.html">SASS</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">PARCEL</a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">JS</a></li>
+                <li><a href="/out/index.html">JSDoc</a></li>
             </ul>
         </nav> 
     
@@ -45,21 +41,36 @@
                 <span class="menu-text">Stäng meny</span>
             </button>
             <ul>
-                <li><a href="information.html">SASS</a></li>
-                <li><a href="#">CSS</a></li>
-                <li><a href="#">PARCEL</a></li>
-                <li><a href="#">HTML</a></li>
-                <li><a href="#">JS</a></li>
+                <li><a href="/out/index.html">JSDoc</a></li>
             </ul>
         </nav>
     </header>
 
     <div id="contentgrid">
         <article id="indexarticle">
-            <h1>Boilerplate</h1>
-            <p>
-                Uppgiften gick ut på att skapa en "boilerplate" för framtida projekt med hjälp av automatiserad transpilering, minifiering samt optimering av bilder med hjälp av ett kommandobaserat verktyg i NodeJs i detta fall utav Parcel.
-            </p>
+            <h1>Kolla vädret där du bor!</h1>
+            <p>Med hjälp av denna webbplats kan du se ditt närområdes väderprognos det kommande 24 timmarna.</p>
+            <div id="mapflex">
+                <div>
+                    <input type="text" id="locationinput" placeholder="Sök i kartan">
+                    <button id="searchbut">Sök</button>
+                </div>    
+                <iframe id="mapcont" src="https://www.openstreetmap.org/export/embed.html?bbox=10.0,50.0,10.1,50.1&layer=mapnik" ></iframe>
+            </div>
+            <div>
+                <table id="weatherTable">
+                    <thead>
+                        <tr>
+                            <th>Tid</th>
+                            <th>Temperatur</th>
+                            <th>Nederbörd</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+
+                    </tbody>
+                </table>
+            </div>
         </article>
     </div>
 </body>
