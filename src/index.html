@@ -11,10 +11,10 @@
     <header>
         <a href="index.html">
             <picture>
-                 <source srcset="bilder/css-preprocessorer-high-resolution-logo-transparent.png?as=avif" type="image/avif">
-                 <source srcset="bilder/css-preprocessorer-high-resolution-logo-transparent.png?as=webp" type="image/webp">
-                 <source srcset="bilder/css-preprocessorer-high-resolution-logo-transparent.png" type="image/png">
-                 <img src="bilder/css-preprocessorer-high-resolution-logo-transparent.png" alt="Logotyp">
+                 <source srcset="bilder/sverigesvader.png?as=avif" type="image/avif">
+                 <source srcset="bilder/sverigesvader.png?as=webp" type="image/webp">
+                 <source srcset="bilder/sverigesvader.png" type="image/png">
+                 <img src="bilder/sverigesvader.png" alt="Logotyp">
             </picture>
          </a>   
         <nav class="desktopmenu"> <!--Desktopmenyn-->
@@ -54,7 +54,8 @@
                 <div>
                     <input type="text" id="locationinput" placeholder="Sök i kartan">
                     <button id="searchbut">Sök</button>
-                </div>    
+                </div>
+                <div id="loader" class="hidden">Laddar kartan...</div>    
                 <iframe id="mapcont" src="https://www.openstreetmap.org/export/embed.html?bbox=10.0,50.0,10.1,50.1&layer=mapnik" ></iframe>
             </div>
             <div>

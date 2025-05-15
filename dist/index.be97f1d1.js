@@ -635,10 +635,15 @@ searchBut.addEventListener('click', searchlocation);
      * iframe elementet där kartan visas
      * @constant {HTMLElement} map - iframe i DOM
      */ let map = document.getElementById('mapcont');
+        let loader = document.getElementById('loader');
+        loader.classList.remove('hidden');
         /**
      * Url som visarr kartan i iframen beserat på det hämtade korodinaterna
      * @constant {string} map.src - OpenStreetMap inbäddad kart url
      */ map.src = `https://www.openstreetmap.org/export/embed.html?bbox=${lon - 0.01},${lat - 0.01},${lon + 0.01},${lat + 0.01}&layer=mapnik&marker=${lat},${lon}`;
+        map.onload = ()=>{
+            loader.classList.add('hidden');
+        };
         getWeatherData(lat, lon);
     } catch (error) {
         console.error('Det uppstod ett fel:', error.message);
